@@ -1,24 +1,11 @@
-<mvc:View
-	controllerName="testattr.controller.Object"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:semantic="sap.m.semantic"
-	xmlns:footerbar="sap.ushell.ui.footerbar">
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" controllerName="testattr.controller.Object">
 
-	<semantic:FullscreenPage
-		id="page"
-		navButtonPress="onNavBack"
-		showNavButton="true"
-		title="{i18n>objectTitle}"
-		busy="{objectView>/busy}"
-		busyIndicatorDelay="{objectView>/delay}">
+	<semantic:FullscreenPage id="page" navButtonPress="onNavBack" showNavButton="true" title="{i18n>objectTitle}" busy="{objectView>/busy}" busyIndicatorDelay="{objectView>/delay}">
 
 		<semantic:content>
-			<ObjectHeader
-				id="objectHeader"
-				title="{LONGDESCRIPTION}"
-				numberUnit="{SHORTDESCRIPTION}">
+			<ObjectHeader id="objectHeader" title="{LONGDESCRIPTION}" numberUnit="{SHORTDESCRIPTION}">
 			</ObjectHeader>
+			<ObjectIdentifier title="Title{SHORTDESCRIPTION}" text="{DATECREATED}" badgeNotes="true" badgePeople="true" badgeAttachments="true" id="__identifier0"/>
  		</semantic:content>
 
 		<semantic:sendEmailAction>
@@ -30,7 +17,7 @@
 		</semantic:shareInJamAction>
 
 		<semantic:saveAsTileAction>
-			<footerbar:AddBookmarkButton id ="shareTile" title="{objectView>/saveAsTileTitle}" />
+			<footerbar:AddBookmarkButton id="shareTile" title="{objectView>/saveAsTileTitle}"/>
 		</semantic:saveAsTileAction>
 
 	</semantic:FullscreenPage>

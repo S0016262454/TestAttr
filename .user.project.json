@@ -1,6 +1,25 @@
 {
   "run": [
     {
+      "filePath": "/webapp/Component.js",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "urlParametersNotNeeded": false,
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "fiorirunner",
+        "id": 1637785,
+        "displayName": "Run Component.js",
+        "lastRunTimeStamp": 1476342263123
+      }
+    },
+    {
       "filePath": "/TestAttrP/webapp/test/flpSandbox.html",
       "previewMode": 1,
       "dataMode": 1,
