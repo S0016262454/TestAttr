@@ -1,0 +1,23 @@
+<edmx:Edmx
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+    <edmx:DataServices
+        xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+        <Schema
+            xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+            xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="hcpworkshop.model.TestAttr">
+            <EntityType Name="TestAttrODataType">
+                <Key>
+                    <PropertyRef Name="DEVICETYPEID"/>
+                </Key>
+                <Property Name="DEVICETYPEID" Type="Edm.String" Nullable="false" MaxLength="50"/>
+                <Property Name="SHORTDESCRIPTION" Type="Edm.String" MaxLength="50"/>
+                <Property Name="LONGDESCRIPTION" Type="Edm.String" MaxLength="200"/>
+                <Property Name="DATECREATED" Type="Edm.DateTime"/>
+            </EntityType>
+            <EntityContainer Name="TestAttr" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="TestAttrOData" EntityType="hcpworkshop.model.TestAttr.TestAttrODataType"/>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
